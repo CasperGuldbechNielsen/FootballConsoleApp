@@ -5,6 +5,7 @@ namespace FootballConsoleApp
 {
     public class MainProgram
     {
+        ContactSOAP soap = new ContactSOAP();
         public MainProgram()
         {
             int x = ShowMenu();
@@ -12,10 +13,12 @@ namespace FootballConsoleApp
             switch (x)
             {
                 case 1:
+                    soap.GetLeagueStanding();
                     break;
                 case 2:
                     break;
                 case 3:
+                    soap.GetUpcomingMatches();
                     break;
                 default:
                     break;
