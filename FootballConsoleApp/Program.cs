@@ -10,6 +10,7 @@ namespace FootballConsoleApp
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
